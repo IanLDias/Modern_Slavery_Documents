@@ -2,11 +2,10 @@ import PyPDF2
 import re
 import pandas as pd
 
-def get_file(filename):
+def get_file(file_path):
     'Reads in files from Data folder'
     #Change this to get requests
-    pdf_file = 'Data/' + filename
-    pdffile = open(pdf_file, 'rb')
+    pdffile = open(file_path, 'rb')
     pdfreader = PyPDF2.PdfFileReader(pdffile)
     num_pages = pdfreader.getNumPages()
     #Get it in text format and split by \n
@@ -41,12 +40,12 @@ def make_dict(titles, filename):
         segments[titles['title'][i-1]] = pages[titles['page_number'][i-1]][titles['line_number'][i-1]+1:]
     return segments
 
-def pipeline(filename):
-    pages = get_file(filename)
+def pipeline(filepath):
+    pages = get_file(filepath)
     titles = preprocess(pages)
-    segments = make_dict(titles, filename)
+    segments = make_dict(titles, filepath)
     return segments
 
 if __name__ == '__main__':
-    filename = 'coke_1.pdf'
-    print(pipeline(filename='coke_1.pdf'))
+    filepath = 'Data/coke_1.pdf'
+    print(pipeline(filepath=filepath))
