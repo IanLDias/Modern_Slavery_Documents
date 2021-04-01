@@ -9,4 +9,10 @@ This consists of thousands of PDFs every year submitted by these companies.
 
 # Goals
 
-The goal of this project is to implement an information extraction framework for these PDFs and provide text summarization.
+The goal of this project is to implement an information extraction framework for these PDFs
+
+1) Text Summarization of the PDFs 
+    - Extractive Approach: identifying key sentences and phrases and using these in a summary
+    - Abstractive Approach: Generating a summary
+2) Relevance Score 
+3) Identifying companies at risk
