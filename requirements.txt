@@ -1,2 +1,4 @@
 pandas
 PyPDF2
+SpaCy
+gensim
