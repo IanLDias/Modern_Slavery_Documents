@@ -1,4 +1,4 @@
 pandas
 PyPDF2
 SpaCy
-gensim
+bs4
