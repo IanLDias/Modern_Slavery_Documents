@@ -16,5 +16,5 @@ for page_number in range(0, 500,10):
     links=[i.group(1) for i in results if i != None]
     all_links.append(links)
 
-with open("statementurls.txt", "wb") as f:
+with open("statementurls.pickle", "wb") as f:
     pickle.dump(all_links, f)
