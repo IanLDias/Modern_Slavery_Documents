@@ -3,3 +3,4 @@ venv
 .vscode
 Data/.ipynb_checkpoints
 __pycache__
+Data/downloaded_files

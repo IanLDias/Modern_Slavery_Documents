@@ -9,7 +9,7 @@ query = query.replace(' ', '+')
 
 all_links = []
 for page_number in range(0, 500,10):
-    url = f"https://google.com/search?q={query}&start={page_number}'"
+    url = f"https://google.com/search?q={query}&start={page_number}&end={page_number+10}'"
     resp = requests.get(url)
     soup = BeautifulSoup(resp.content, "html.parser")   
     result = soup.find_all('div', attrs = {'class': 'ZINbbc'})
@@ -39,9 +39,8 @@ relevant_links = []
 for link in all_links:
     match = re.search(pattern, link)
     if match:
-        relevant_links.append(links)
+        relevant_links.append(link)
 
-relevant_links = sum(relevant_links, [])
 pattern = '[^/]+(\.pdf)'  
 count = 0
 
