@@ -2,3 +2,4 @@ pandas
 PyPDF2
 SpaCy
 bs4
+textract
