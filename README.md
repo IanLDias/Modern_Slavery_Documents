@@ -13,6 +13,8 @@ The goal of this project is to implement an information extraction framework for
 
 1) Text Summarization of the PDFs 
     - Extractive Approach: identifying key sentences and phrases and using these in a summary
-    - Abstractive Approach: Generating a summary
-2) Relevance Score 
+    - Abstractive Approach: Generating a summary (WIP)
+2) Relevance Score
+    - Calculates the TF-IDF of each document and compares document similarities
+    - Makes a list of the most and least relevant document. Found in TF-IDF sklearn.ipynb
 3) Identifying companies at risk
