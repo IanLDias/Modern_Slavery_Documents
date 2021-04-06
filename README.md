@@ -1,6 +1,6 @@
 # About
 
-Largely based on the work done by The Future Society, available at https://github.com/the-future-society/modern-slavery-statements-research.
+Largely inspired by the work done by The Future Society, available at https://github.com/the-future-society/modern-slavery-statements-research.
 
 The UK Modern Slavery Act (MSA) requires companies above a certain valuation to report steps that they are taking to to abolish modern slavery from their operations. 
 
